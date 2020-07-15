@@ -124,7 +124,7 @@ $(document).ready(function () {
 
             //現在の天気データを呼び出し
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather",
+                url: "https://api.openweathermap.org/data/2.5/weather",
                 dataType: "jsonp",
                 data: "lat=" + lat + "&lon=" + lon + "&appid=" + APIKEY,
                 //天気データ呼び出し成功時の挙動
@@ -151,7 +151,7 @@ $(document).ready(function () {
                     $('.nowTemp').text(Math.floor((data.main.temp - 273.15) * 10) / 10);
                     $('.nowTemp').fadeIn(4000);
 
-                    $('.dayWeatherIcon').attr('src', 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png ');
+                    $('.dayWeatherIcon').attr('src', 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png ');
                     $('.dayWeatherIcon').fadeIn(3000);
                 }
             });
@@ -183,7 +183,7 @@ $(document).ready(function () {
 
         //現在の天気データ呼び出し
         $.ajax({
-            url: "http://api.openweathermap.org/data/2.5/weather",
+            url: "https://api.openweathermap.org/data/2.5/weather",
             dataType: "jsonp",
             data: "q=Osaka,jp&appid=" + APIKEY,
             //天気データ呼び出し成功時の挙動

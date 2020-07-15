@@ -136,29 +136,59 @@ input[type=text]:focus {
 
 @media screen and (max-width:640px){
 
-    .weatherMain{
-        /* text-align: center; */
-        font-size: small;
-        /* margin:0 auto; */
+    .title{
+        text-align: center;
     }
 
-    .date{
-        margin: 0 0 40px 30px;
+
+    .weatherMain{
+        text-align: left; 
+        font-size: small;
+        margin:0 auto; 
     }
+
+    .date{ 
+        /* margin: 0 0 40px 30px; */
+        text-align: center;
+    }
+
+    .location{
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .dayWeather{
+        text-align: center;
+        margin-left: 55px;
+    }
+
     .dayWeatherIcon{
-        margin: 5px 5px 5px 30px;
+        /* margin: 5px 5px 5px 30px; */
         height: 25px;
+        text-align: center;
     }
     .nowTemp{
-        margin: 0 0 40px 30px;
+        /* margin: 0 0 40px 30px; */
+        text-align: center;
 
     }
     .temperature{
         letter-spacing: 7px;
-    
+        margin-left: 10px;
     } 
     
-
+    .dt{
+        margin-left: 10px;
+    }
+    .lc{
+        margin-left: 10px;
+    }
+    .weather{
+        margin-left: 10px;
+    }
+    .icon{
+        margin-left: 10px;
+    }
 
 
 

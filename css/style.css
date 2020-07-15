@@ -134,9 +134,10 @@ input[type=text]:focus {
 
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:480px){
 
-    .title{
+    .title h1{
+        margin-right: 30px;
         text-align: center;
     }
 

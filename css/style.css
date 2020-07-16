@@ -136,31 +136,29 @@ input[type=text]:focus {
 
 @media screen and (max-width:480px){
 
-    .title h1{
-        margin-right: 30px;
-        text-align: center;
-    }
+
 
 
     .weatherMain{
         text-align: left; 
         font-size: small;
-        margin:0 auto; 
+        margin:20px auto auto 20px; 
     }
 
     .date{ 
         /* margin: 0 0 40px 30px; */
         text-align: center;
+
     }
 
     .location{
         text-align: center;
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     .dayWeather{
         text-align: center;
-        margin-left: 55px;
+        margin-left: 60px;
     }
 
     .dayWeatherIcon{
@@ -180,17 +178,17 @@ input[type=text]:focus {
     
     .dt{
         margin-left: 10px;
+
     }
     .lc{
         margin-left: 10px;
     }
     .weather{
-        margin-left: 10px;
+        margin-left: 8px;
     }
     .icon{
         margin-left: 10px;
     }
-
 
 
 

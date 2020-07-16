@@ -150,7 +150,7 @@ $(document).ready(function () {
                     }
 
                     //各データの表示
-                    $('.nowTemp').text(Math.floor((data.main.temp - 273.15) * 10) / 10);
+                    $('.nowTemp').text(Math.floor((data.main.temp - 273.15) * 10) / 10 + '℃');
                     $('.nowTemp').fadeIn(4000);
 
                     $('.dayWeatherIcon').attr('src', 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png ');
@@ -214,10 +214,10 @@ $(document).ready(function () {
                 }
 
                 //各データの表示
-                $('.nowTemp').text(Math.floor((data.main.temp - 273.15) * 10) / 10);
+                $('.nowTemp').text(Math.floor((data.main.temp - 273.15) * 10) / 10 + '℃');
                 $('.nowTemp').fadeIn(4000);
 
-                $('.dayWeatherIcon').attr('src', 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png ');
+                $('.dayWeatherIcon').attr('src', 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png ');
                 $('.dayWeatherIcon').fadeIn(3000);
 
             }

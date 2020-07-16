@@ -80,11 +80,6 @@ const filterTasks = (term) => {
         .forEach((todo) => todo.classList.remove('filtered'));
 };
 
-// search.addEventListener('keyup', () => {
-//     // 空白削除かつ、小文字に変換(大文字・小文字の区別をなくす)
-//     const term = search.value.trim().toLowerCase();
-//     filterTasks(term);
-// });
 
 
 
@@ -119,7 +114,14 @@ $(document).ready(function () {
             //緯度経度の取得と表示
             const lat = positionData.latitude;
             const lon = positionData.longitude;
-            $('.location').text('（' + Math.floor(lat * 100) / 100 + ',' + Math.floor(lon * 100) / 100 + '）');
+            const lati = Math.floor(lat * 100) / 100 
+            const long = Math.floor(lon * 100) / 100
+            if (lati == 34.84 && long == 135.66){
+                $('.location').text('HIRAKATA')
+            }else{
+                 $('.location').text('(' + Math.floor(lat * 100) / 100 + ',' + Math.floor(lon * 100) / 100 + '）');
+
+            }
             $('.location').fadeIn(2000);
 
             //現在の天気データを呼び出し
